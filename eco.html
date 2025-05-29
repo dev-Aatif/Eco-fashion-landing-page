@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoStyle | Sustainable Fashion</title>
+    <link rel="stylesheet" href="eco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="eco.js" defer></script>
+</head>
+<body>
+    <!-- Hero section with video background -->
+   <section class="hero">
+    <video id="hero-video" autoplay muted loop playsinline>
+        <source src="media/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1>Conscious Fashion, Reimagined</h1>
+        <p>Ethically crafted sustainable apparel for the modern world</p>
+        <a href="#new-collection" class="cta-btn">Explore Collection</a>
+    </div>
+</section>
+
+    <!-- New Collection grid -->
+     
+    <section class="collection">
+         <section class="collection" id="new-collection">
+        <h2 class="grid-title">New Sustainable Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="media/product1.jpg" alt="Organic Cotton T-Shirt" class="product-img">
+                <div class="product-info">
+                    <h3>Organic Cotton Tee</h3>
+                    <div class="price">$39.99</div>
+                    <div class="eco-badge">100% Biodegradable</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="media/product1.jpg" alt="Recycled Denim Jeans" class="product-img">
+                <div class="product-info">
+                    <h3>Recycled Denim</h3>
+                    <div class="price">$89.99</div>
+                    <div class="eco-badge">Zero Waste</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="media/product1.jpg" alt="Bamboo Fiber Dress" class="product-img">
+                <div class="product-info">
+                    <h3>Bamboo Fiber Dress</h3>
+                    <div class="price">$79.99</div>
+                    <div class="eco-badge">Carbon Neutral</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="media/product1.jpg" alt="Hemp Jacket" class="product-img">
+                <div class="product-info">
+                    <h3>Hemp Travel Jacket</h3>
+                    <div class="price">$129.99</div>
+                    <div class="eco-badge">Water Saving</div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Size guide button -->
+        <button id="sizeGuideBtn" class="size-guide-btn">
+            <i class="fas fa-ruler-combined"></i> Find Your Size
+        </button>
+    </section>
+
+    <!-- Size Guide Modal -->
+    <div id="sizeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Our Sustainable Sizing Guide</h2>
+            <p>All measurements in inches. Select your size for recommendations</p>
+            
+            <div class="size-chart">
+                <div class="size-option">XS</div>
+                <div class="size-option">S</div>
+                <div class="size-option selected">M</div>
+                <div class="size-option">L</div>
+                <div class="size-option">XL</div>
+            </div>
+            
+            <div style="margin-top: 2rem; background: #f9f9f9; padding: 1.5rem; border-radius: 10px;">
+                <h3 style="margin-bottom: 1rem;">Why Our Sizing is Sustainable</h3>
+                <p>We use digital tailoring to minimize fabric waste. Each garment is precision-cut using AI algorithms that reduce material waste by up to 40% compared to traditional methods.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter section -->
+    <section class="newsletter">
+        <h2>Join Our Eco-Revolution</h2>
+        <p>Subscribe for sustainable living tips and exclusive member benefits</p>
+        <form id="newsletterForm" class="newsletter-form">
+            <div class="form-group">
+                <input type="email" id="emailInput" class="email-input" placeholder="Your email address" required>
+                <div id="emailError" class="error-message">Please enter a valid email address</div>
+            </div>
+            <button type="submit" class="submit-btn">Subscribe Now</button>
+            <div id="successMessage" class="success-message">
+                <i class="fas fa-check-circle"></i> Thank you! You've joined our sustainable community
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 EcoStyle. Sustainable fashion for a better tomorrow.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>100% Carbon Neutral • Plastic-Free Packaging • Ethical Manufacturing</p>
+    </footer>
+</body>
+</html
